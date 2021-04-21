@@ -1,19 +1,39 @@
 # Inmana
 
-To start your Phoenix server:
+## Descrição
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
+Gerenciamento de suprimentos de restaurantes.
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+### Requisitos
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+- [x] Podem ser cadastrados restaurantes e suprimentos
+- [x] Deve ser possível visualizar as informações de um suprimento
+- [ ] Deve ser gerada uma relação de itens à vencer toda semana para cada um dos restaurantes
+- [ ] A relação de itens deve ser enviada para o email do restaurante
 
-## Learn more
+## How to Develop / Como desenvolver?
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+1. Clonar o repositório
+2. Navegar até a pasta do repositório
+3. Instalar dependências
+4. Criar e migrar o banco de dados
+5. Iniciar servidor de desenvolvimento (Phoenix)
+
+```bash
+git clone https://github.com/virb30/nlw5-elixir.git inmana
+cd inmana
+mix deps.get
+mix ecto.setup
+mix phx.server
+```
+
+O servidor de desenvolvimento estará disponível em:
+
+[`localhost:4000`](http://localhost:4000)
+
+### Rotas disponíveis
+
+`/dashboard` - Dashboard padrão do phoenix
+`[POST] /api/restaurants` - criar restaurantes
+`[POST] /api/supplies` - criar suprimento
+`[GET] /api/supplies/:id` - exibir detalhes do suprimento `:id`
