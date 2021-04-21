@@ -1,0 +1,2 @@
+defmodule Inmana do
+end
