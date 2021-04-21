@@ -8,7 +8,7 @@ Gerenciamento de suprimentos de restaurantes.
 
 - [x] Podem ser cadastrados restaurantes e suprimentos
 - [x] Deve ser possível visualizar as informações de um suprimento
-- [ ] Deve ser gerada uma relação de itens à vencer toda semana para cada um dos restaurantes
+- [x] Deve ser gerada uma relação de itens à vencer toda semana para cada um dos restaurantes
 - [ ] A relação de itens deve ser enviada para o email do restaurante
 
 ## How to Develop / Como desenvolver?
