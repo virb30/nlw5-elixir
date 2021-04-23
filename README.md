@@ -10,6 +10,11 @@ Gerenciamento de suprimentos de restaurantes.
 - [x] Deve ser possível visualizar as informações de um suprimento
 - [x] Deve ser gerada uma relação de itens à vencer toda semana para cada um dos restaurantes
 - [x] A relação de itens deve ser enviada para o email do restaurante
+- [ ] A relação de itens deve ser enviada toda semana
+
+### Extras
+
+- [x] Implementar envio de e-mail de forma assíncrona e com multiplas tarefas
 
 ## How to Develop / Como desenvolver?
 
