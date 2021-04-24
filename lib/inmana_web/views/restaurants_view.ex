@@ -7,4 +7,11 @@ defmodule InmanaWeb.RestaurantsView do
       restaurant: restaurant
     }
   end
+
+  def render("update.json", %{restaurant: restaurant}) do
+    %{
+      message: "Restaurant updated!",
+      restaurant: restaurant
+    }
+  end
 end

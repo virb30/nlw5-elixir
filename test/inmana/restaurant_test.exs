@@ -4,7 +4,7 @@ defmodule Inmana.RestaurantTest do
   alias Ecto.Changeset
   alias Inmana.Restaurant
 
-  describe "chanset/1" do
+  describe "changeset/1" do
     test "when all params are valid, returns a valid changeset" do
       params = %{name: "Siri cascudo", email: "siri@cascudo.com"}
 

@@ -13,4 +13,14 @@ defmodule InmanaWeb.RestaurantsController do
       |> render("create.json", restaurant: restaurant)
     end
   end
+
+  def update(conn, %{"id" => uuid, "email" => email, "name" => name}) do
+    params = %{email: email, name: name}
+
+    with {:ok, %Restaurant{} = restaurant} <- Inmana.update_restaurant(uuid, params) do
+      conn
+      |> put_status(:ok)
+      |> render("update.json", restaurant: restaurant)
+    end
+  end
 end

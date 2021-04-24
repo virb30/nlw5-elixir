@@ -29,4 +29,14 @@ defmodule Inmana.Restaurant do
     |> validate_format(:email, ~r/@/)
     |> unique_constraint([:email])
   end
+
+  def change(restaurant, params) do
+    # __MODULE__ = pega o nome do módulo atual
+    restaurant
+    |> cast(params, @required_params)
+    |> validate_required(@required_params)
+    |> validate_length(:name, min: 2)
+    |> validate_format(:email, ~r/@/)
+    |> unique_constraint([:email])
+  end
 end
